@@ -12,7 +12,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *labelForEmployeeName;
 @property (weak, nonatomic) IBOutlet UILabel *labelForEmployeeID;
 @property (weak, nonatomic) IBOutlet UILabel *labelForEmployeeDesignationAndAddress;
-@property (weak, nonatomic) IBOutlet UILabel *labelForEmployeeAddress;
 @property (weak, nonatomic) IBOutlet UIImageView *imageOfEmployee;
 @property NSInteger intLabel;
 @end

@@ -21,6 +21,7 @@
 }
 
 - (void)viewDidLoad {
+    self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"dark-wood-image.jpg"]];
     [super viewDidLoad];
 }
 

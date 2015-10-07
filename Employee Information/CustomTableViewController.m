@@ -24,11 +24,12 @@
 @implementation CustomTableViewController
 
 - (void)viewDidLoad {
+    self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"dark-wood-image.jpg"]];
     [super viewDidLoad];
 
-    tableData = [NSArray arrayWithObjects:@"John", @"Shawn", @"Peter", @"Bob", @"Maria", nil];
+    tableData = [NSArray arrayWithObjects:@"John Marsh", @"Shawn Michaels", @"Peter Parker", @"Bob Pieterson", @"Maria Faulkner", @"Scarlett Thomas",@"Kitty Vincent",@"Trisha Roy", nil];
 
-    thumbnails = [NSArray arrayWithObjects:@"John.png", @"Shawn.png", @"Peter.png", @"Bob.png", @"Maria.png", nil];
+    thumbnails = [NSArray arrayWithObjects:@"John.png", @"Shawn.png", @"Peter.png", @"Bob.png", @"Maria.png",@"Scarlett.png",@"Kitty.png",@"Trisha.png", nil];
     [self.tableView registerClass:[CustomTableViewCell class] forCellReuseIdentifier:@"cell"];
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([CustomTableViewCell class]) bundle:nil] forCellReuseIdentifier:@"CustomTableViewCell"];
 }
