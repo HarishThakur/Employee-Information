@@ -7,16 +7,21 @@
 //
 
 #import "ViewController.h"
+#import "EmployeeInfoViewController.h"
 
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
+{
+    NSMutableArray *arrayForEmployeeDetails;
+    NSObject *data;
+    NSDictionary *tempDictionary;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,4 +29,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString: @"showEpmloyeeInfo"]) {
+        EmployeeInfoViewController *viewCtrl = (EmployeeInfoViewController *)[segue destinationViewController];
+        viewCtrl.intLabel = _intIndexLabel;
+        NSLog(@"VC intLabel: %ld", viewCtrl.intLabel);
+    }
+}
 @end

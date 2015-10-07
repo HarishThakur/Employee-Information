@@ -10,10 +10,20 @@
 		7DDF376C1BC289210096545C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DDF376B1BC289210096545C /* main.m */; };
 		7DDF376F1BC289210096545C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DDF376E1BC289210096545C /* AppDelegate.m */; };
 		7DDF37721BC289210096545C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DDF37711BC289210096545C /* ViewController.m */; };
-		7DDF37751BC289210096545C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DDF37731BC289210096545C /* Main.storyboard */; };
 		7DDF37771BC289210096545C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DDF37761BC289210096545C /* Images.xcassets */; };
 		7DDF377A1BC289210096545C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DDF37781BC289210096545C /* LaunchScreen.xib */; };
 		7DDF37861BC289210096545C /* Employee_InformationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DDF37851BC289210096545C /* Employee_InformationTests.m */; };
+		7DDF37931BC291C20096545C /* CustomTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DDF37921BC291C20096545C /* CustomTableViewController.m */; };
+		7DDF37971BC292320096545C /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DDF37951BC292320096545C /* CustomTableViewCell.m */; };
+		7DDF37981BC292320096545C /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DDF37961BC292320096545C /* CustomTableViewCell.xib */; };
+		7DE0A7FF1BC29E0600627259 /* John.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DE0A7FA1BC29E0600627259 /* John.png */; };
+		7DE0A8011BC29E0600627259 /* Peter.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DE0A7FC1BC29E0600627259 /* Peter.png */; };
+		7DE0A8021BC29E0600627259 /* Shawn.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DE0A7FD1BC29E0600627259 /* Shawn.png */; };
+		7DE0A8051BC2AF6100627259 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DE0A8031BC2AF6100627259 /* Main.storyboard */; };
+		7DE0A80A1BC3F45700627259 /* Bob.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DE0A8081BC3F45700627259 /* Bob.png */; };
+		7DE0A80B1BC3F45700627259 /* Kitty.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DE0A8091BC3F45700627259 /* Kitty.png */; };
+		7DE0A80F1BC3F48D00627259 /* Maria.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DE0A80E1BC3F48D00627259 /* Maria.png */; };
+		7DE0A8121BC3FF8200627259 /* EmployeeInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE0A8111BC3FF8200627259 /* EmployeeInfoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +44,25 @@
 		7DDF376E1BC289210096545C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		7DDF37701BC289210096545C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		7DDF37711BC289210096545C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		7DDF37741BC289210096545C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7DDF37761BC289210096545C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7DDF37791BC289210096545C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		7DDF377F1BC289210096545C /* Employee InformationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Employee InformationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DDF37841BC289210096545C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DDF37851BC289210096545C /* Employee_InformationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Employee_InformationTests.m; sourceTree = "<group>"; };
+		7DDF37911BC291C20096545C /* CustomTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewController.h; sourceTree = "<group>"; };
+		7DDF37921BC291C20096545C /* CustomTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewController.m; sourceTree = "<group>"; };
+		7DDF37941BC292320096545C /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
+		7DDF37951BC292320096545C /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
+		7DDF37961BC292320096545C /* CustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		7DE0A7FA1BC29E0600627259 /* John.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = John.png; path = ../../../Downloads/John.png; sourceTree = "<group>"; };
+		7DE0A7FC1BC29E0600627259 /* Peter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Peter.png; path = ../../../Downloads/Peter.png; sourceTree = "<group>"; };
+		7DE0A7FD1BC29E0600627259 /* Shawn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Shawn.png; path = ../../../Downloads/Shawn.png; sourceTree = "<group>"; };
+		7DE0A8041BC2AF6100627259 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7DE0A8081BC3F45700627259 /* Bob.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Bob.png; path = ../../../Downloads/Bob.png; sourceTree = "<group>"; };
+		7DE0A8091BC3F45700627259 /* Kitty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Kitty.png; path = ../../../Downloads/Kitty.png; sourceTree = "<group>"; };
+		7DE0A80E1BC3F48D00627259 /* Maria.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Maria.png; path = ../../../Downloads/Maria.png; sourceTree = "<group>"; };
+		7DE0A8101BC3FF8200627259 /* EmployeeInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmployeeInfoViewController.h; sourceTree = "<group>"; };
+		7DE0A8111BC3FF8200627259 /* EmployeeInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmployeeInfoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,10 +108,23 @@
 				7DDF376E1BC289210096545C /* AppDelegate.m */,
 				7DDF37701BC289210096545C /* ViewController.h */,
 				7DDF37711BC289210096545C /* ViewController.m */,
-				7DDF37731BC289210096545C /* Main.storyboard */,
+				7DDF37911BC291C20096545C /* CustomTableViewController.h */,
+				7DDF37921BC291C20096545C /* CustomTableViewController.m */,
+				7DE0A8031BC2AF6100627259 /* Main.storyboard */,
 				7DDF37761BC289210096545C /* Images.xcassets */,
 				7DDF37781BC289210096545C /* LaunchScreen.xib */,
 				7DDF37691BC289210096545C /* Supporting Files */,
+				7DDF37941BC292320096545C /* CustomTableViewCell.h */,
+				7DDF37951BC292320096545C /* CustomTableViewCell.m */,
+				7DDF37961BC292320096545C /* CustomTableViewCell.xib */,
+				7DE0A7FA1BC29E0600627259 /* John.png */,
+				7DE0A7FC1BC29E0600627259 /* Peter.png */,
+				7DE0A8081BC3F45700627259 /* Bob.png */,
+				7DE0A8091BC3F45700627259 /* Kitty.png */,
+				7DE0A80E1BC3F48D00627259 /* Maria.png */,
+				7DE0A7FD1BC29E0600627259 /* Shawn.png */,
+				7DE0A8101BC3FF8200627259 /* EmployeeInfoViewController.h */,
+				7DE0A8111BC3FF8200627259 /* EmployeeInfoViewController.m */,
 			);
 			path = "Employee Information";
 			sourceTree = "<group>";
@@ -199,9 +235,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DDF37751BC289210096545C /* Main.storyboard in Resources */,
+				7DE0A8021BC29E0600627259 /* Shawn.png in Resources */,
 				7DDF377A1BC289210096545C /* LaunchScreen.xib in Resources */,
+				7DE0A8011BC29E0600627259 /* Peter.png in Resources */,
+				7DE0A80A1BC3F45700627259 /* Bob.png in Resources */,
+				7DE0A7FF1BC29E0600627259 /* John.png in Resources */,
+				7DE0A80B1BC3F45700627259 /* Kitty.png in Resources */,
+				7DDF37981BC292320096545C /* CustomTableViewCell.xib in Resources */,
+				7DE0A8051BC2AF6100627259 /* Main.storyboard in Resources */,
 				7DDF37771BC289210096545C /* Images.xcassets in Resources */,
+				7DE0A80F1BC3F48D00627259 /* Maria.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,8 +262,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DDF37931BC291C20096545C /* CustomTableViewController.m in Sources */,
 				7DDF37721BC289210096545C /* ViewController.m in Sources */,
+				7DE0A8121BC3FF8200627259 /* EmployeeInfoViewController.m in Sources */,
 				7DDF376F1BC289210096545C /* AppDelegate.m in Sources */,
+				7DDF37971BC292320096545C /* CustomTableViewCell.m in Sources */,
 				7DDF376C1BC289210096545C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,20 +290,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7DDF37731BC289210096545C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7DDF37741BC289210096545C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7DDF37781BC289210096545C /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				7DDF37791BC289210096545C /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		7DE0A8031BC2AF6100627259 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7DE0A8041BC2AF6100627259 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -416,6 +462,7 @@
 				7DDF378B1BC289210096545C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7DDF378C1BC289210096545C /* Build configuration list for PBXNativeTarget "Employee InformationTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +471,7 @@
 				7DDF378E1BC289210096545C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

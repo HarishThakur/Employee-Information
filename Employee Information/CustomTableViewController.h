@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CustomTableViewController.h
 //  Employee Information
 //
 //  Created by Harish Singh on 05/10/15.
@@ -8,10 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-{
-    NSDictionary *setJobDetailDict;
-}
-@property NSInteger intIndexLabel;
-@end
+@interface CustomTableViewController : UITableViewController
 
+@end
