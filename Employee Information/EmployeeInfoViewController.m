@@ -8,6 +8,7 @@
 
 #import "EmployeeInfoViewController.h"
 #import "ViewController.h"
+#import "NSDictionary+JSONResult.h"
 
 @interface EmployeeInfoViewController ()
 
@@ -24,9 +25,11 @@
     self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"dark-wood-image.jpg"]];
     [super viewDidLoad];
     
-    NSLog(@"VC intLabel: %ld", _intLabel);
+    //NSLog(@"VC intLabel: %ld", _intLabel);
     [self addEmployeeDetails];
     tempDictionary = [self getvalueAtIndex:_intLabel];
+    
+    [NSDictionary getJSONResult:tempDictionary];
     
     _labelForEmployeeName.text = tempDictionary[@"name"];
     _labelForEmployeeID.text = tempDictionary[@"empId"];
@@ -46,9 +49,11 @@
 
 -(NSString*)getvalueAtIndex:(int)indexNumber
 {
-    NSLog(@"VC IndexNumber: %d", indexNumber);
-    return [arrayForEmployeeDetails objectAtIndex:indexNumber];
+    //NSLog(@"VC IndexNumber: %d", indexNumber);
+    return [arrayForEmployeeDetails objectAtIndex:indexNumber]; 
 }
+
+
 
 /**
  *  Method to add employee deatils in a dictionary and add it to an array

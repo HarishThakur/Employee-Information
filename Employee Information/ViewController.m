@@ -36,7 +36,7 @@
     if ([segue.identifier isEqualToString: @"showEpmloyeeInfo"]) {
         EmployeeInfoViewController *viewCtrl = (EmployeeInfoViewController *)[segue destinationViewController];
         viewCtrl.intLabel = _intIndexLabel;
-        NSLog(@"VC intLabel: %ld", viewCtrl.intLabel);
+        //NSLog(@"VC intLabel: %ld", viewCtrl.intLabel);
     }
 }
 @end

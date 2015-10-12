@@ -31,6 +31,7 @@
 		7DF16BD51BCB6E7D00951AED /* Scarlett.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DF16BC81BCB6E7D00951AED /* Scarlett.png */; };
 		7DF16BD61BCB6E7D00951AED /* Shawn.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DF16BC91BCB6E7D00951AED /* Shawn.png */; };
 		7DF16BD71BCB6E7D00951AED /* Trisha.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DF16BCA1BCB6E7D00951AED /* Trisha.png */; };
+		7DF16BDA1BCB838E00951AED /* NSDictionary+JSONResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF16BD91BCB838E00951AED /* NSDictionary+JSONResult.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,8 @@
 		7DF16BC81BCB6E7D00951AED /* Scarlett.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Scarlett.png; path = ../../../../Downloads/Scarlett.png; sourceTree = "<group>"; };
 		7DF16BC91BCB6E7D00951AED /* Shawn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Shawn.png; path = ../../../../Downloads/Shawn.png; sourceTree = "<group>"; };
 		7DF16BCA1BCB6E7D00951AED /* Trisha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Trisha.png; path = ../../../../Downloads/Trisha.png; sourceTree = "<group>"; };
+		7DF16BD81BCB838E00951AED /* NSDictionary+JSONResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+JSONResult.h"; path = "../NSDictionary+JSONResult.h"; sourceTree = "<group>"; };
+		7DF16BD91BCB838E00951AED /* NSDictionary+JSONResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+JSONResult.m"; path = "../NSDictionary+JSONResult.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +149,8 @@
 				7DF16BCA1BCB6E7D00951AED /* Trisha.png */,
 				7DE0A8101BC3FF8200627259 /* EmployeeInfoViewController.h */,
 				7DE0A8111BC3FF8200627259 /* EmployeeInfoViewController.m */,
+				7DF16BD81BCB838E00951AED /* NSDictionary+JSONResult.h */,
+				7DF16BD91BCB838E00951AED /* NSDictionary+JSONResult.m */,
 			);
 			path = "Employee Information";
 			sourceTree = "<group>";
@@ -291,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DDF37931BC291C20096545C /* CustomTableViewController.m in Sources */,
+				7DF16BDA1BCB838E00951AED /* NSDictionary+JSONResult.m in Sources */,
 				7DDF37721BC289210096545C /* ViewController.m in Sources */,
 				7DE0A8121BC3FF8200627259 /* EmployeeInfoViewController.m in Sources */,
 				7DDF376F1BC289210096545C /* AppDelegate.m in Sources */,

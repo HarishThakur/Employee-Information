@@ -72,7 +72,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     vc = [[ViewController alloc] initWithNibName:@"EmployeeInfoViewController" bundle:nil];
     currentRow = [NSString stringWithFormat:@"%ld",(long)indexPath.row];
-    NSLog(@"TVC current row %ld", currentRow.integerValue);
+    //NSLog(@"TVC current row %ld", currentRow.integerValue);
     [self performSegueWithIdentifier:@"showEmployeeDetails" sender:self];
 
 }
@@ -81,7 +81,7 @@
         if ([segue.identifier isEqualToString: @"showEmployeeDetails"]) {
             ViewController *viewCtrl = (ViewController*)[segue destinationViewController];
             viewCtrl.intIndexLabel = currentRow.integerValue;
-            NSLog(@"TVC intLabel: %ld", viewCtrl.intIndexLabel);
+            //NSLog(@"TVC intLabel: %ld", viewCtrl.intIndexLabel);
         }
 }
 
