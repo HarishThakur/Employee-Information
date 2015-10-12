@@ -16,21 +16,21 @@
 		7DDF37931BC291C20096545C /* CustomTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DDF37921BC291C20096545C /* CustomTableViewController.m */; };
 		7DDF37971BC292320096545C /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DDF37951BC292320096545C /* CustomTableViewCell.m */; };
 		7DDF37981BC292320096545C /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DDF37961BC292320096545C /* CustomTableViewCell.xib */; };
-		7DE0A7FF1BC29E0600627259 /* John.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DE0A7FA1BC29E0600627259 /* John.png */; };
-		7DE0A8011BC29E0600627259 /* Peter.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DE0A7FC1BC29E0600627259 /* Peter.png */; };
-		7DE0A8021BC29E0600627259 /* Shawn.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DE0A7FD1BC29E0600627259 /* Shawn.png */; };
 		7DE0A8051BC2AF6100627259 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DE0A8031BC2AF6100627259 /* Main.storyboard */; };
-		7DE0A80A1BC3F45700627259 /* Bob.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DE0A8081BC3F45700627259 /* Bob.png */; };
-		7DE0A80B1BC3F45700627259 /* Kitty.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DE0A8091BC3F45700627259 /* Kitty.png */; };
-		7DE0A80F1BC3F48D00627259 /* Maria.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DE0A80E1BC3F48D00627259 /* Maria.png */; };
 		7DE0A8121BC3FF8200627259 /* EmployeeInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE0A8111BC3FF8200627259 /* EmployeeInfoViewController.m */; };
-		7DE0A8141BC51F7500627259 /* back-image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7DE0A8131BC51F7500627259 /* back-image.jpg */; };
-		7DE0A8161BC524D900627259 /* ios-backImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7DE0A8151BC524D900627259 /* ios-backImage.jpg */; };
-		7DE0A8181BC526CA00627259 /* Scarlett.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DE0A8171BC526CA00627259 /* Scarlett.png */; };
-		7DE0A81A1BC526DD00627259 /* Trisha.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DE0A8191BC526DD00627259 /* Trisha.png */; };
-		7DE0A81C1BC52B8B00627259 /* logo-SBT.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DE0A81B1BC52B8B00627259 /* logo-SBT.png */; };
-		7DE0A81E1BC52EF400627259 /* bgImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7DE0A81D1BC52EF400627259 /* bgImage.jpg */; };
-		7DE0A8201BC5338700627259 /* dark-wood-image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7DE0A81F1BC5338700627259 /* dark-wood-image.jpg */; };
+		7DF16BCB1BCB6E7D00951AED /* back-image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7DF16BBE1BCB6E7D00951AED /* back-image.jpg */; };
+		7DF16BCC1BCB6E7D00951AED /* bgImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7DF16BBF1BCB6E7D00951AED /* bgImage.jpg */; };
+		7DF16BCD1BCB6E7D00951AED /* Bob.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DF16BC01BCB6E7D00951AED /* Bob.png */; };
+		7DF16BCE1BCB6E7D00951AED /* dark-wood-image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7DF16BC11BCB6E7D00951AED /* dark-wood-image.jpg */; };
+		7DF16BCF1BCB6E7D00951AED /* ios-backImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7DF16BC21BCB6E7D00951AED /* ios-backImage.jpg */; };
+		7DF16BD01BCB6E7D00951AED /* John.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DF16BC31BCB6E7D00951AED /* John.png */; };
+		7DF16BD11BCB6E7D00951AED /* Kitty.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DF16BC41BCB6E7D00951AED /* Kitty.png */; };
+		7DF16BD21BCB6E7D00951AED /* logo-SBT.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DF16BC51BCB6E7D00951AED /* logo-SBT.png */; };
+		7DF16BD31BCB6E7D00951AED /* Maria.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DF16BC61BCB6E7D00951AED /* Maria.png */; };
+		7DF16BD41BCB6E7D00951AED /* Peter.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DF16BC71BCB6E7D00951AED /* Peter.png */; };
+		7DF16BD51BCB6E7D00951AED /* Scarlett.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DF16BC81BCB6E7D00951AED /* Scarlett.png */; };
+		7DF16BD61BCB6E7D00951AED /* Shawn.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DF16BC91BCB6E7D00951AED /* Shawn.png */; };
+		7DF16BD71BCB6E7D00951AED /* Trisha.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DF16BCA1BCB6E7D00951AED /* Trisha.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,22 +61,22 @@
 		7DDF37941BC292320096545C /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
 		7DDF37951BC292320096545C /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
 		7DDF37961BC292320096545C /* CustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
-		7DE0A7FA1BC29E0600627259 /* John.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = John.png; path = ../../../Downloads/John.png; sourceTree = "<group>"; };
-		7DE0A7FC1BC29E0600627259 /* Peter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Peter.png; path = ../../../Downloads/Peter.png; sourceTree = "<group>"; };
-		7DE0A7FD1BC29E0600627259 /* Shawn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Shawn.png; path = ../../../Downloads/Shawn.png; sourceTree = "<group>"; };
 		7DE0A8041BC2AF6100627259 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7DE0A8081BC3F45700627259 /* Bob.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Bob.png; path = ../../../Downloads/Bob.png; sourceTree = "<group>"; };
-		7DE0A8091BC3F45700627259 /* Kitty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Kitty.png; path = ../../../Downloads/Kitty.png; sourceTree = "<group>"; };
-		7DE0A80E1BC3F48D00627259 /* Maria.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Maria.png; path = ../../../Downloads/Maria.png; sourceTree = "<group>"; };
 		7DE0A8101BC3FF8200627259 /* EmployeeInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmployeeInfoViewController.h; sourceTree = "<group>"; };
 		7DE0A8111BC3FF8200627259 /* EmployeeInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmployeeInfoViewController.m; sourceTree = "<group>"; };
-		7DE0A8131BC51F7500627259 /* back-image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "back-image.jpg"; path = "../../../Downloads/back-image.jpg"; sourceTree = "<group>"; };
-		7DE0A8151BC524D900627259 /* ios-backImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "ios-backImage.jpg"; path = "../../../Downloads/ios-backImage.jpg"; sourceTree = "<group>"; };
-		7DE0A8171BC526CA00627259 /* Scarlett.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Scarlett.png; path = ../../../Downloads/Scarlett.png; sourceTree = "<group>"; };
-		7DE0A8191BC526DD00627259 /* Trisha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Trisha.png; path = ../../../Downloads/Trisha.png; sourceTree = "<group>"; };
-		7DE0A81B1BC52B8B00627259 /* logo-SBT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "logo-SBT.png"; path = "../../../Downloads/logo-SBT.png"; sourceTree = "<group>"; };
-		7DE0A81D1BC52EF400627259 /* bgImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bgImage.jpg; path = ../../../Downloads/bgImage.jpg; sourceTree = "<group>"; };
-		7DE0A81F1BC5338700627259 /* dark-wood-image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "dark-wood-image.jpg"; path = "../../../Downloads/dark-wood-image.jpg"; sourceTree = "<group>"; };
+		7DF16BBE1BCB6E7D00951AED /* back-image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "back-image.jpg"; path = "../../../../Downloads/back-image.jpg"; sourceTree = "<group>"; };
+		7DF16BBF1BCB6E7D00951AED /* bgImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bgImage.jpg; path = ../../../../Downloads/bgImage.jpg; sourceTree = "<group>"; };
+		7DF16BC01BCB6E7D00951AED /* Bob.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Bob.png; path = ../../../../Downloads/Bob.png; sourceTree = "<group>"; };
+		7DF16BC11BCB6E7D00951AED /* dark-wood-image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "dark-wood-image.jpg"; path = "../../../../Downloads/dark-wood-image.jpg"; sourceTree = "<group>"; };
+		7DF16BC21BCB6E7D00951AED /* ios-backImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "ios-backImage.jpg"; path = "../../../../Downloads/ios-backImage.jpg"; sourceTree = "<group>"; };
+		7DF16BC31BCB6E7D00951AED /* John.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = John.png; path = ../../../../Downloads/John.png; sourceTree = "<group>"; };
+		7DF16BC41BCB6E7D00951AED /* Kitty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Kitty.png; path = ../../../../Downloads/Kitty.png; sourceTree = "<group>"; };
+		7DF16BC51BCB6E7D00951AED /* logo-SBT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "logo-SBT.png"; path = "../../../../Downloads/logo-SBT.png"; sourceTree = "<group>"; };
+		7DF16BC61BCB6E7D00951AED /* Maria.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Maria.png; path = ../../../../Downloads/Maria.png; sourceTree = "<group>"; };
+		7DF16BC71BCB6E7D00951AED /* Peter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Peter.png; path = ../../../../Downloads/Peter.png; sourceTree = "<group>"; };
+		7DF16BC81BCB6E7D00951AED /* Scarlett.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Scarlett.png; path = ../../../../Downloads/Scarlett.png; sourceTree = "<group>"; };
+		7DF16BC91BCB6E7D00951AED /* Shawn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Shawn.png; path = ../../../../Downloads/Shawn.png; sourceTree = "<group>"; };
+		7DF16BCA1BCB6E7D00951AED /* Trisha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Trisha.png; path = ../../../../Downloads/Trisha.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,19 +131,19 @@
 				7DDF37941BC292320096545C /* CustomTableViewCell.h */,
 				7DDF37951BC292320096545C /* CustomTableViewCell.m */,
 				7DDF37961BC292320096545C /* CustomTableViewCell.xib */,
-				7DE0A7FA1BC29E0600627259 /* John.png */,
-				7DE0A7FC1BC29E0600627259 /* Peter.png */,
-				7DE0A8081BC3F45700627259 /* Bob.png */,
-				7DE0A8091BC3F45700627259 /* Kitty.png */,
-				7DE0A80E1BC3F48D00627259 /* Maria.png */,
-				7DE0A7FD1BC29E0600627259 /* Shawn.png */,
-				7DE0A8171BC526CA00627259 /* Scarlett.png */,
-				7DE0A8191BC526DD00627259 /* Trisha.png */,
-				7DE0A81B1BC52B8B00627259 /* logo-SBT.png */,
-				7DE0A81F1BC5338700627259 /* dark-wood-image.jpg */,
-				7DE0A8131BC51F7500627259 /* back-image.jpg */,
-				7DE0A81D1BC52EF400627259 /* bgImage.jpg */,
-				7DE0A8151BC524D900627259 /* ios-backImage.jpg */,
+				7DF16BBE1BCB6E7D00951AED /* back-image.jpg */,
+				7DF16BBF1BCB6E7D00951AED /* bgImage.jpg */,
+				7DF16BC01BCB6E7D00951AED /* Bob.png */,
+				7DF16BC11BCB6E7D00951AED /* dark-wood-image.jpg */,
+				7DF16BC21BCB6E7D00951AED /* ios-backImage.jpg */,
+				7DF16BC31BCB6E7D00951AED /* John.png */,
+				7DF16BC41BCB6E7D00951AED /* Kitty.png */,
+				7DF16BC51BCB6E7D00951AED /* logo-SBT.png */,
+				7DF16BC61BCB6E7D00951AED /* Maria.png */,
+				7DF16BC71BCB6E7D00951AED /* Peter.png */,
+				7DF16BC81BCB6E7D00951AED /* Scarlett.png */,
+				7DF16BC91BCB6E7D00951AED /* Shawn.png */,
+				7DF16BCA1BCB6E7D00951AED /* Trisha.png */,
 				7DE0A8101BC3FF8200627259 /* EmployeeInfoViewController.h */,
 				7DE0A8111BC3FF8200627259 /* EmployeeInfoViewController.m */,
 			);
@@ -256,23 +256,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DE0A8161BC524D900627259 /* ios-backImage.jpg in Resources */,
-				7DE0A8201BC5338700627259 /* dark-wood-image.jpg in Resources */,
-				7DE0A8181BC526CA00627259 /* Scarlett.png in Resources */,
-				7DE0A8021BC29E0600627259 /* Shawn.png in Resources */,
+				7DF16BCE1BCB6E7D00951AED /* dark-wood-image.jpg in Resources */,
+				7DF16BCC1BCB6E7D00951AED /* bgImage.jpg in Resources */,
+				7DF16BCB1BCB6E7D00951AED /* back-image.jpg in Resources */,
+				7DF16BD61BCB6E7D00951AED /* Shawn.png in Resources */,
 				7DDF377A1BC289210096545C /* LaunchScreen.xib in Resources */,
-				7DE0A8141BC51F7500627259 /* back-image.jpg in Resources */,
-				7DE0A8011BC29E0600627259 /* Peter.png in Resources */,
-				7DE0A81E1BC52EF400627259 /* bgImage.jpg in Resources */,
-				7DE0A81C1BC52B8B00627259 /* logo-SBT.png in Resources */,
-				7DE0A80A1BC3F45700627259 /* Bob.png in Resources */,
-				7DE0A7FF1BC29E0600627259 /* John.png in Resources */,
-				7DE0A80B1BC3F45700627259 /* Kitty.png in Resources */,
+				7DF16BD41BCB6E7D00951AED /* Peter.png in Resources */,
+				7DF16BD01BCB6E7D00951AED /* John.png in Resources */,
+				7DF16BD51BCB6E7D00951AED /* Scarlett.png in Resources */,
+				7DF16BD31BCB6E7D00951AED /* Maria.png in Resources */,
+				7DF16BD71BCB6E7D00951AED /* Trisha.png in Resources */,
 				7DDF37981BC292320096545C /* CustomTableViewCell.xib in Resources */,
-				7DE0A81A1BC526DD00627259 /* Trisha.png in Resources */,
+				7DF16BD11BCB6E7D00951AED /* Kitty.png in Resources */,
 				7DE0A8051BC2AF6100627259 /* Main.storyboard in Resources */,
+				7DF16BCD1BCB6E7D00951AED /* Bob.png in Resources */,
+				7DF16BD21BCB6E7D00951AED /* logo-SBT.png in Resources */,
 				7DDF37771BC289210096545C /* Images.xcassets in Resources */,
-				7DE0A80F1BC3F48D00627259 /* Maria.png in Resources */,
+				7DF16BCF1BCB6E7D00951AED /* ios-backImage.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
