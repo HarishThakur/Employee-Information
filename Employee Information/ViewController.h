@@ -13,5 +13,8 @@
     NSDictionary *setJobDetailDict;
 }
 @property NSInteger intIndexLabel;
+
+@property (strong,nonatomic) NSMutableDictionary *getEmpInfo;
+
 @end
 

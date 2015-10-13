@@ -12,7 +12,7 @@
 
 - (void)awakeFromNib {
     // Initialization code
-    self.contentView.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"dark-wood-image.jpg"]];
+    //self.contentView.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"dark-wood-image.jpg"]];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

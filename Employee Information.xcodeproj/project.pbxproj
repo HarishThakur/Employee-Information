@@ -32,6 +32,8 @@
 		7DF16BD61BCB6E7D00951AED /* Shawn.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DF16BC91BCB6E7D00951AED /* Shawn.png */; };
 		7DF16BD71BCB6E7D00951AED /* Trisha.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DF16BCA1BCB6E7D00951AED /* Trisha.png */; };
 		7DF16BDA1BCB838E00951AED /* NSDictionary+JSONResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF16BD91BCB838E00951AED /* NSDictionary+JSONResult.m */; };
+		7DF16BDD1BCB9E6100951AED /* AddNewEmployeeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF16BDC1BCB9E6100951AED /* AddNewEmployeeViewController.m */; };
+		7DF16BE11BCCBE4600951AED /* no-image.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DF16BE01BCCBE4600951AED /* no-image.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,9 @@
 		7DF16BCA1BCB6E7D00951AED /* Trisha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Trisha.png; path = ../../../../Downloads/Trisha.png; sourceTree = "<group>"; };
 		7DF16BD81BCB838E00951AED /* NSDictionary+JSONResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+JSONResult.h"; path = "../NSDictionary+JSONResult.h"; sourceTree = "<group>"; };
 		7DF16BD91BCB838E00951AED /* NSDictionary+JSONResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+JSONResult.m"; path = "../NSDictionary+JSONResult.m"; sourceTree = "<group>"; };
+		7DF16BDB1BCB9E6100951AED /* AddNewEmployeeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddNewEmployeeViewController.h; path = ../AddNewEmployeeViewController.h; sourceTree = "<group>"; };
+		7DF16BDC1BCB9E6100951AED /* AddNewEmployeeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddNewEmployeeViewController.m; path = ../AddNewEmployeeViewController.m; sourceTree = "<group>"; };
+		7DF16BE01BCCBE4600951AED /* no-image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "no-image.png"; path = "../../../../Downloads/no-image.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +148,7 @@
 				7DF16BC41BCB6E7D00951AED /* Kitty.png */,
 				7DF16BC51BCB6E7D00951AED /* logo-SBT.png */,
 				7DF16BC61BCB6E7D00951AED /* Maria.png */,
+				7DF16BE01BCCBE4600951AED /* no-image.png */,
 				7DF16BC71BCB6E7D00951AED /* Peter.png */,
 				7DF16BC81BCB6E7D00951AED /* Scarlett.png */,
 				7DF16BC91BCB6E7D00951AED /* Shawn.png */,
@@ -151,6 +157,8 @@
 				7DE0A8111BC3FF8200627259 /* EmployeeInfoViewController.m */,
 				7DF16BD81BCB838E00951AED /* NSDictionary+JSONResult.h */,
 				7DF16BD91BCB838E00951AED /* NSDictionary+JSONResult.m */,
+				7DF16BDB1BCB9E6100951AED /* AddNewEmployeeViewController.h */,
+				7DF16BDC1BCB9E6100951AED /* AddNewEmployeeViewController.m */,
 			);
 			path = "Employee Information";
 			sourceTree = "<group>";
@@ -269,6 +277,7 @@
 				7DF16BD41BCB6E7D00951AED /* Peter.png in Resources */,
 				7DF16BD01BCB6E7D00951AED /* John.png in Resources */,
 				7DF16BD51BCB6E7D00951AED /* Scarlett.png in Resources */,
+				7DF16BE11BCCBE4600951AED /* no-image.png in Resources */,
 				7DF16BD31BCB6E7D00951AED /* Maria.png in Resources */,
 				7DF16BD71BCB6E7D00951AED /* Trisha.png in Resources */,
 				7DDF37981BC292320096545C /* CustomTableViewCell.xib in Resources */,
@@ -298,6 +307,7 @@
 				7DDF37931BC291C20096545C /* CustomTableViewController.m in Sources */,
 				7DF16BDA1BCB838E00951AED /* NSDictionary+JSONResult.m in Sources */,
 				7DDF37721BC289210096545C /* ViewController.m in Sources */,
+				7DF16BDD1BCB9E6100951AED /* AddNewEmployeeViewController.m in Sources */,
 				7DE0A8121BC3FF8200627259 /* EmployeeInfoViewController.m in Sources */,
 				7DDF376F1BC289210096545C /* AppDelegate.m in Sources */,
 				7DDF37971BC292320096545C /* CustomTableViewCell.m in Sources */,

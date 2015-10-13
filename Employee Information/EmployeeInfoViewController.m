@@ -27,7 +27,12 @@
     
     //NSLog(@"VC intLabel: %ld", _intLabel);
     [self addEmployeeDetails];
-    tempDictionary = [self getvalueAtIndex:_intLabel];
+    if(_intLabel >= 8) {
+        tempDictionary = _empDetailedInfo;
+    }
+    else {
+        tempDictionary = [self getvalueAtIndex:_intLabel];
+    }
     
     [NSDictionary getJSONResult:tempDictionary];
     

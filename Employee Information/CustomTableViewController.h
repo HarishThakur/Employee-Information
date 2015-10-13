@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AddNewEmployeeViewController.h"
 
-@interface CustomTableViewController : UITableViewController
+
+
+@interface CustomTableViewController : UITableViewController <passEmployeeInfo>
+
+//@property (strong,nonatomic) NSString *employeeName;
+//@property (strong,nonatomic) NSString *employeeID;
+//@property (strong,nonatomic) NSString *designation;
+//@property (strong,nonatomic) NSString *address;
+
+@property (strong,nonatomic) NSMutableDictionary *empDetailedInfo;
 
 @end

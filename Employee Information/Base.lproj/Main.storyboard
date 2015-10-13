@@ -31,11 +31,168 @@
                             <outlet property="delegate" destination="c0n-aK-jPZ" id="su3-rf-uGu"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Sourcebits Employee" id="jCy-fu-nY8"/>
+                    <navigationItem key="navigationItem" title="Sourcebits Employee" id="jCy-fu-nY8">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Nbt-QP-Exo">
+                            <connections>
+                                <segue destination="fpy-UX-uOS" kind="modal" identifier="addEmployeeInfo" id="CuT-T5-FNH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LLT-vb-2em" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="802.5" y="344"/>
+            <point key="canvasLocation" x="730.5" y="344"/>
+        </scene>
+        <!--Add New Employee-->
+        <scene sceneID="Hw4-V2-Fja">
+            <objects>
+                <viewController id="fpy-UX-uOS" customClass="AddNewEmployeeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="miM-b8-mBm"/>
+                        <viewControllerLayoutGuide type="bottom" id="LB6-nJ-TDU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Utj-pD-vWb">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Employee Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85O-tw-cJK">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="34" y="101" width="131" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Employee ID:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hkF-0Q-FPt">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="34" y="174" width="102" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Designation:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R9w-rE-CYD">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="34" y="253" width="96" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Atv-1I-aTU">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="34" y="327" width="68" height="21"/>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HoA-lw-PFp">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="34" y="130" width="301" height="30"/>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zRe-3d-3kh">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="34" y="203" width="301" height="30"/>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QxZ-rT-eEv">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="34" y="282" width="301" height="30"/>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pCC-gn-tQA">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="34" y="356" width="301" height="30"/>
+                                </variation>
+                            </textField>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pNL-jh-Zgh">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Add Employee Information" id="I0U-ix-XlK">
+                                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="op0-nQ-KnG">
+                                            <connections>
+                                                <action selector="cancel:" destination="fpy-UX-uOS" id="hAZ-lW-JDL"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Save" id="n9S-yB-dRf">
+                                            <connections>
+                                                <action selector="save:" destination="fpy-UX-uOS" id="3c8-DT-Viv"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="20" width="400" height="44"/>
+                                </variation>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="85O-tw-cJK"/>
+                                <exclude reference="hkF-0Q-FPt"/>
+                                <exclude reference="R9w-rE-CYD"/>
+                                <exclude reference="Atv-1I-aTU"/>
+                                <exclude reference="HoA-lw-PFp"/>
+                                <exclude reference="zRe-3d-3kh"/>
+                                <exclude reference="QxZ-rT-eEv"/>
+                                <exclude reference="pCC-gn-tQA"/>
+                                <exclude reference="pNL-jh-Zgh"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="85O-tw-cJK"/>
+                                <include reference="hkF-0Q-FPt"/>
+                                <include reference="R9w-rE-CYD"/>
+                                <include reference="Atv-1I-aTU"/>
+                                <include reference="HoA-lw-PFp"/>
+                                <include reference="zRe-3d-3kh"/>
+                                <include reference="QxZ-rT-eEv"/>
+                                <include reference="pCC-gn-tQA"/>
+                                <include reference="pNL-jh-Zgh"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add New Employee" id="E2t-hj-gkU">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Zg8-hi-LBr">
+                            <connections>
+                                <action selector="cancel:" destination="fpy-UX-uOS" id="AdA-BQ-oq3"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="S3z-qU-0So">
+                            <connections>
+                                <action selector="save:" destination="fpy-UX-uOS" id="fWj-Yr-r3W"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="textFieldAddress" destination="pCC-gn-tQA" id="9KP-Va-v4r"/>
+                        <outlet property="textFieldDesignation" destination="QxZ-rT-eEv" id="wSY-Ic-iLV"/>
+                        <outlet property="textFieldEmployeeID" destination="zRe-3d-3kh" id="G5H-DR-d6F"/>
+                        <outlet property="textFieldEmployeeName" destination="HoA-lw-PFp" id="dKw-Qp-gF1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gFO-8U-0ew" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1503" y="344"/>
         </scene>
         <!--Employee Information-->
         <scene sceneID="ufC-wZ-h7g">
@@ -140,7 +297,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1542" y="344"/>
+            <point key="canvasLocation" x="1503" y="1092"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="UOf-CT-cRw">
@@ -158,7 +315,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fM4-lE-HIj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-7.5" y="344"/>
+            <point key="canvasLocation" x="-55.5" y="344"/>
         </scene>
         <!--Employee Info View Controller-->
         <scene sceneID="ZUU-3B-gMZ">
@@ -214,13 +371,13 @@
                                     <rect key="frame" x="39" y="172" width="292" height="21"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VZg-bA-e51">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VZg-bA-e51">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" red="0.97263591019999995" green="0.98964251889999999" blue="0.98543784020000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="197" y="201" width="96" height="21"/>
+                                    <rect key="frame" x="214" y="201" width="96" height="21"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Employee ID:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="asc-JE-ojA">
@@ -279,7 +436,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vaX-NV-VuK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2286" y="191"/>
+            <point key="canvasLocation" x="2247" y="939"/>
         </scene>
     </scenes>
     <resources>

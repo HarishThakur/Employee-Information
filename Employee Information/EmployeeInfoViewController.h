@@ -14,4 +14,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *labelForEmployeeDesignationAndAddress;
 @property (weak, nonatomic) IBOutlet UIImageView *imageOfEmployee;
 @property NSInteger intLabel;
+
+@property (strong,nonatomic) NSMutableDictionary *empDetailedInfo;
+
 @end

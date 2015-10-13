@@ -13,8 +13,8 @@
 
 
 @interface CustomTableViewController () {
-    NSArray *tableData;
-    NSArray *thumbnails;
+    NSMutableArray *tableData;
+    NSMutableArray *thumbnails;
     NSString *currentRow;
     ViewController *vc;
 }
@@ -24,14 +24,14 @@
 @implementation CustomTableViewController
 
 - (void)viewDidLoad {
-    self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"dark-wood-image.jpg"]];
     [super viewDidLoad];
+    //self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"dark-wood-image.jpg"]];
 
-    tableData = [NSArray arrayWithObjects:@"John Marsh", @"Shawn Michaels", @"Peter Parker", @"Bob Pieterson", @"Maria Faulkner", @"Scarlett Thomas",@"Kitty Vincent",@"Trisha Roy", nil];
-
-    thumbnails = [NSArray arrayWithObjects:@"John.png", @"Shawn.png", @"Peter.png", @"Bob.png", @"Maria.png",@"Scarlett.png",@"Kitty.png",@"Trisha.png", nil];
     [self.tableView registerClass:[CustomTableViewCell class] forCellReuseIdentifier:@"cell"];
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([CustomTableViewCell class]) bundle:nil] forCellReuseIdentifier:@"CustomTableViewCell"];
+    tableData = [NSMutableArray arrayWithObjects:@"John Marsh", @"Shawn Michaels", @"Peter Parker", @"Bob Pieterson", @"Maria Faulkner", @"Scarlett Thomas",@"Kitty Vincent",@"Trisha Roy", nil];
+    thumbnails = [NSMutableArray arrayWithObjects:@"John.png", @"Shawn.png", @"Peter.png",@"Bob.png",@"Maria.png",@"Scarlett.png",@"Kitty.png",@"Trisha.png", nil];
+    self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -42,7 +42,6 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-    // If You have only one(1) section, return 1, otherwise you must handle sections
     return 1;
 }
 
@@ -54,16 +53,16 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    //static NSString *CellIdentifier = @"Cell";
-    
+   
     CustomTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CustomTableViewCell" forIndexPath:indexPath];
-//    if (cell == nil) {
-//        cell = [[CustomTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Main Cell"];
-//    }
-    
-    // Configure the cell...
-   cell.lbl.text = [tableData objectAtIndex:indexPath.row];
-    cell.imgV.image = [UIImage imageNamed:[thumbnails objectAtIndex:indexPath.row]];
+    cell.lbl.text = [tableData objectAtIndex:indexPath.row];
+    if(indexPath.row >= 8)
+    {
+        cell.imgV.image = [UIImage imageNamed:@"no-image.png"];
+    }
+    else {
+         cell.imgV.image = [UIImage imageNamed:[thumbnails objectAtIndex:indexPath.row]];
+    }
     cell.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;
@@ -72,65 +71,53 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     vc = [[ViewController alloc] initWithNibName:@"EmployeeInfoViewController" bundle:nil];
     currentRow = [NSString stringWithFormat:@"%ld",(long)indexPath.row];
-    //NSLog(@"TVC current row %ld", currentRow.integerValue);
     [self performSegueWithIdentifier:@"showEmployeeDetails" sender:self];
-
 }
+
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-        if ([segue.identifier isEqualToString: @"showEmployeeDetails"]) {
-            ViewController *viewCtrl = (ViewController*)[segue destinationViewController];
-            viewCtrl.intIndexLabel = currentRow.integerValue;
-            //NSLog(@"TVC intLabel: %ld", viewCtrl.intIndexLabel);
-        }
+    if ([segue.identifier isEqualToString: @"showEmployeeDetails"]) {
+        ViewController *viewCtrl = (ViewController*)[segue destinationViewController];
+        viewCtrl.intIndexLabel = currentRow.integerValue;
+        viewCtrl.getEmpInfo = _empDetailedInfo;
+    }
+    else if ([segue.identifier isEqualToString:@"addEmployeeInfo"])
+    {
+        AddNewEmployeeViewController *viewCtrl = (AddNewEmployeeViewController*)[segue destinationViewController];
+        viewCtrl.delegate = self;
+    }
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 50.0f;
 }
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+-(void)viewWillAppear:(BOOL)animated {
+    [self.tableView reloadData];
 }
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+#pragma mark - Protocol Methods
+
+-(void)setEmployeeInfo: (NSMutableDictionary*)employeeInfo {
+    _empDetailedInfo = employeeInfo;
+    [tableData addObject:employeeInfo[@"name"]];
 }
-*/
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
+//-(void)setEmployeeName:(NSString*)employeeName{
+//    _employeeName = employeeName;
+//    //[tableData addObject:employeeName];
+//}
+//-(void)setEmployeeID:(NSString*)employeeID{
+//    _employeeID = employeeID;
+//}
+//-(void)setDesignation:(NSString*)designation{
+//    _designation = designation;
+//}
+//-(void)setAddress:(NSString*)address{
+//    _address = address;
+//}
 
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

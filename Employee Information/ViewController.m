@@ -30,12 +30,12 @@
     // Dispose of any resources that can be recreated.
 }
 
-
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.identifier isEqualToString: @"showEpmloyeeInfo"]) {
         EmployeeInfoViewController *viewCtrl = (EmployeeInfoViewController *)[segue destinationViewController];
         viewCtrl.intLabel = _intIndexLabel;
+        viewCtrl.empDetailedInfo = _getEmpInfo;
         //NSLog(@"VC intLabel: %ld", viewCtrl.intLabel);
     }
 }
