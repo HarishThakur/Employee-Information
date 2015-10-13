@@ -27,6 +27,35 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)selectImage:(id)sender {
+    
+    UIImagePickerController *imagePickerController = [[UIImagePickerController alloc] init];
+    
+    imagePickerController.modalPresentationStyle = UIModalPresentationCurrentContext;
+    
+    imagePickerController.delegate = self;
+    
+    [self presentViewController:imagePickerController animated:NO completion:nil];
+    
+}
+
+-(void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+}
+
+-(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    
+    pickImage = [info valueForKey:UIImagePickerControllerOriginalImage];
+    
+    self.imageView.image = pickImage;
+    
+    //_setImageView = pickImage;
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+}
 
 /*
 #pragma mark - Navigation
