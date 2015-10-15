@@ -27,11 +27,11 @@
     [super viewDidLoad];
     //self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"dark-wood-image.jpg"]];
 
-    [self.tableView registerClass:[CustomTableViewCell class] forCellReuseIdentifier:@"cell"];
-    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([CustomTableViewCell class]) bundle:nil] forCellReuseIdentifier:@"CustomTableViewCell"];
+    [self.sbtEmployeeListTableView registerClass:[CustomTableViewCell class] forCellReuseIdentifier:@"cell"];
+    [self.sbtEmployeeListTableView registerNib:[UINib nibWithNibName:NSStringFromClass([CustomTableViewCell class]) bundle:nil] forCellReuseIdentifier:@"CustomTableViewCell"];
     tableData = [NSMutableArray arrayWithObjects:@"John Marsh", @"Shawn Michaels", @"Peter Parker", @"Bob Pieterson", @"Maria Faulkner", @"Scarlett Thomas",@"Kitty Vincent",@"Trisha Roy", nil];
     thumbnails = [NSMutableArray arrayWithObjects:@"John.png", @"Shawn.png", @"Peter.png",@"Bob.png",@"Maria.png",@"Scarlett.png",@"Kitty.png",@"Trisha.png", nil];
-    self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+        self.sbtEmployeeListTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -93,7 +93,7 @@
 }
 
 -(void)viewWillAppear:(BOOL)animated {
-    [self.tableView reloadData];
+    [self.sbtEmployeeListTableView reloadData];
 }
 
 #pragma mark - Protocol Methods

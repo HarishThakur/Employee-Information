@@ -17,6 +17,7 @@
 //@property (strong,nonatomic) NSString *employeeID;
 //@property (strong,nonatomic) NSString *designation;
 //@property (strong,nonatomic) NSString *address;
+@property (strong, nonatomic) IBOutlet UITableView *sbtEmployeeListTableView;
 
 @property (strong,nonatomic) NSMutableDictionary *empDetailedInfo;
 

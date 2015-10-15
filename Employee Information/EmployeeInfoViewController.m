@@ -58,8 +58,6 @@
     return [arrayForEmployeeDetails objectAtIndex:indexNumber]; 
 }
 
-
-
 /**
  *  Method to add employee deatils in a dictionary and add it to an array
  */

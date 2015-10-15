@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>C3F8F617-AD52-4719-900A-AA465748279A</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>Employee Information</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>ED5A823F3EE8B339B81A85776900135C2EECCFA2</key>
 		<string>https://github.com/HarishThakur/Employee-Information.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Employee Information.xcodeproj/project.xcworkspace</string>
+	<string>Employee Information.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>ED5A823F3EE8B339B81A85776900135C2EECCFA2</key>

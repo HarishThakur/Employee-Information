@@ -10,13 +10,8 @@
 
 @protocol passEmployeeInfo <NSObject>
 
-//-(void)setEmployeeName:(NSString*)employeeName;
-//-(void)setEmployeeID:(NSString*)employeeID;
-//-(void)setDesignation:(NSString*)designation;
-//-(void)setAddress:(NSString*)address;
-
 -(void)setEmployeeInfo: (NSMutableDictionary*)employeeInfo;
-
+-(void)editEmployeeInfo: (NSMutableDictionary*)employeeInfo;
 
 @end
 
@@ -32,13 +27,9 @@
 - (IBAction)save:(id)sender;
 
 @property (weak,nonatomic) id <passEmployeeInfo> delegate;
-//@property (strong,nonatomic) NSString *employeeName;
-//@property (strong,nonatomic) NSString *employeeID;
-//@property (strong,nonatomic) NSString *designation;
-//@property (strong,nonatomic) NSString *address;
 @property (strong,nonatomic) NSMutableDictionary *passedInfo;
 
-
+@property NSInteger intIndexLabel;
 
 
 @end

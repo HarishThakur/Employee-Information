@@ -7,9 +7,10 @@
 //
 
 #import "AddNewEmployeeViewController.h"
+#import "EmpListViewController.h"
 
 @interface AddNewEmployeeViewController () {
-    UIImage *pickImage;
+    NSMutableDictionary *empPassedInfo;
 }
 
 @end
@@ -18,72 +19,42 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-
+    
+    if(_passedInfo != nil) {
+        _textFieldEmployeeName.text = _passedInfo[@"name"];
+        _textFieldEmployeeID.text = _passedInfo[@"empId"];
+        _textFieldDesignation.text = _passedInfo[@"designation"];
+        _textFieldAddress.text = _passedInfo[@"address"];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
-
-- (IBAction)selectImage:(id)sender {
-    
-    UIImagePickerController *imagePickerController = [[UIImagePickerController alloc] init];
-    
-    imagePickerController.modalPresentationStyle = UIModalPresentationCurrentContext;
-    
-    imagePickerController.delegate = self;
-    
-    [self presentViewController:imagePickerController animated:NO completion:nil];
-    
-}
-
--(void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
-    
-    [self dismissViewControllerAnimated:YES completion:nil];
-    
-}
-
--(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
-    
-    pickImage = [info valueForKey:UIImagePickerControllerOriginalImage];
-    
-    self.imageView.image = pickImage;
-    
-    //_setImageView = pickImage;
-    
-    [self dismissViewControllerAnimated:YES completion:nil];
-    
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 - (IBAction)cancel:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+
 - (IBAction)save:(id)sender {
-//     _employeeName = _textFieldEmployeeName.text;
-//    [[self delegate]setEmployeeName: _employeeName];
-//    _employeeID = _textFieldEmployeeID.text;
-//    [[self delegate]setEmployeeID: _employeeID];
-//    _designation = _textFieldDesignation.text;
-//    [[self delegate]setDesignation: _designation];
-//    _address = _textFieldAddress.text;
-//    [[self delegate]setAddress: _address];
+    empPassedInfo = [[NSMutableDictionary alloc]init];
     
-    NSMutableDictionary *empPassedInfo = @{ @"name": [NSString stringWithFormat: _textFieldEmployeeName.text], @"empId": [NSString stringWithFormat: _textFieldEmployeeID.text], @"designation":[NSString stringWithFormat: _textFieldDesignation.text], @"address":[NSString stringWithFormat: _textFieldAddress.text], @"image":@"no-image.png"};
+    [empPassedInfo setValue:[NSString stringWithFormat: _textFieldEmployeeName.text] forKey:@"name" ];
+    [empPassedInfo setValue:[NSString stringWithFormat: _textFieldEmployeeID.text] forKey:@"empId" ];
+    [empPassedInfo setValue:[NSString stringWithFormat: _textFieldDesignation.text] forKey:@"designation" ];
+    [empPassedInfo setValue:[NSString stringWithFormat: _textFieldAddress.text] forKey:@"address" ];
+    [empPassedInfo setValue:@"no-image.png" forKey:@"image" ];
     
-    [[self delegate]setEmployeeInfo: empPassedInfo];
+    if(_passedInfo == nil) {
+        [[self delegate]setEmployeeInfo: empPassedInfo];
+    }
+    else {
+        [[self delegate]editEmployeeInfo: empPassedInfo];
+    }
+    
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+
+
 @end

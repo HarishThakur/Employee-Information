@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7DA9512F1BCE53310054F6AC /* EmpListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA9512E1BCE53310054F6AC /* EmpListViewController.m */; };
 		7DDF376C1BC289210096545C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DDF376B1BC289210096545C /* main.m */; };
 		7DDF376F1BC289210096545C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DDF376E1BC289210096545C /* AppDelegate.m */; };
 		7DDF37721BC289210096545C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DDF37711BC289210096545C /* ViewController.m */; };
@@ -47,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7DA9512D1BCE53310054F6AC /* EmpListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmpListViewController.h; sourceTree = "<group>"; };
+		7DA9512E1BCE53310054F6AC /* EmpListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmpListViewController.m; sourceTree = "<group>"; };
 		7DDF37661BC289210096545C /* Employee Information.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Employee Information.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DDF376A1BC289210096545C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DDF376B1BC289210096545C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -132,6 +135,8 @@
 				7DDF37711BC289210096545C /* ViewController.m */,
 				7DDF37911BC291C20096545C /* CustomTableViewController.h */,
 				7DDF37921BC291C20096545C /* CustomTableViewController.m */,
+				7DA9512D1BCE53310054F6AC /* EmpListViewController.h */,
+				7DA9512E1BCE53310054F6AC /* EmpListViewController.m */,
 				7DE0A8031BC2AF6100627259 /* Main.storyboard */,
 				7DDF37761BC289210096545C /* Images.xcassets */,
 				7DDF37781BC289210096545C /* LaunchScreen.xib */,
@@ -306,6 +311,7 @@
 			files = (
 				7DDF37931BC291C20096545C /* CustomTableViewController.m in Sources */,
 				7DF16BDA1BCB838E00951AED /* NSDictionary+JSONResult.m in Sources */,
+				7DA9512F1BCE53310054F6AC /* EmpListViewController.m in Sources */,
 				7DDF37721BC289210096545C /* ViewController.m in Sources */,
 				7DF16BDD1BCB9E6100951AED /* AddNewEmployeeViewController.m in Sources */,
 				7DE0A8121BC3FF8200627259 /* EmployeeInfoViewController.m in Sources */,
