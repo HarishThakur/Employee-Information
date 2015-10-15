@@ -26,12 +26,14 @@
     [super viewDidLoad];
     [self.employeeListTableView registerClass:[CustomTableViewCell class] forCellReuseIdentifier:@"cell"];
     [self.employeeListTableView registerNib:[UINib nibWithNibName:NSStringFromClass([CustomTableViewCell class]) bundle:nil] forCellReuseIdentifier:@"CustomTableViewCell"];
-//    tableData = [NSMutableArray arrayWithObjects:@"John Marsh", @"Shawn Michaels", @"Peter Parker", @"Bob Pieterson", @"Maria Faulkner", @"Scarlett Thomas",@"Kitty Vincent",@"Trisha Roy", nil];
-//    thumbnails = [NSMutableArray arrayWithObjects:@"John.png", @"Shawn.png", @"Peter.png",@"Bob.png",@"Maria.png",@"Scarlett.png",@"Kitty.png",@"Trisha.png", nil];
+
     tableData = [[NSMutableArray alloc]init];
     thumbnails = [[NSMutableArray alloc]init];
+    //empDetailsInArray = [[NSMutableArray alloc]init];
 
     self.employeeListTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+    
+     //[self.employeeListTableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -50,13 +52,9 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     CustomTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CustomTableViewCell" forIndexPath:indexPath];
     cell.lbl.text = [tableData objectAtIndex:indexPath.row];
-    if(indexPath.row >= 8)
-    {
-        cell.imgV.image = [UIImage imageNamed:@"no-image.png"];
-    }
-    else {
-        cell.imgV.image = [UIImage imageNamed:@"no-image.png"];
-    }
+    
+    cell.imgV.image = [UIImage imageNamed:@"no-image.png"];
+    
     cell.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;
@@ -88,8 +86,6 @@
     else if ([segue.identifier isEqualToString:@"editEmployeeInfo"])
     {
         AddNewEmployeeViewController *viewCtrl = (AddNewEmployeeViewController*)[segue destinationViewController];
-        //viewCtrl.intIndexLabel = currentRow;
-        //[tableData removeAllObjects];
         viewCtrl.delegate = self;
         tempDictionaryForPassingEmpDetails = [self getvalueAtIndex:currentRow.integerValue];
         viewCtrl.passedInfo = tempDictionaryForPassingEmpDetails;
@@ -97,7 +93,7 @@
 }
 
 -(void)viewWillAppear:(BOOL)animated {
-    [self.employeeListTableView reloadData];
+   [self.employeeListTableView reloadData];
 }
 
 - (IBAction)filterRecords:(id)sender {
@@ -131,7 +127,19 @@
     [tableData removeObjectAtIndex:currentRow.integerValue];
     [empDetailsInArray removeObjectAtIndex:currentRow.integerValue];
     [_empDetailedInfo removeObjectForKey:[NSNumber numberWithInt:currentRow.integerValue]];
+
     [self setEmployeeInfo: employeeInfo];
+    
+//    NSMutableDictionary *detailDict = [empDetailsInArray objectAtIndex:currentRow.integerValue];
+//    
+//    [detailDict setObject:[employeeInfo objectForKey:@"name"] forKey:@"name"];
+//    [detailDict setObject:[employeeInfo objectForKey:@"empId"] forKey:@"empId"];
+//    [detailDict setObject:[employeeInfo objectForKey:@"designation"] forKey:@"designation"];
+//    [detailDict setObject:[employeeInfo objectForKey:@"address"] forKey:@"address"];
+    
+    
+    //[self.employeeListTableView reloadRowsAtIndexPaths:<#(NSArray *)#> withRowAnimation:<#(UITableViewRowAnimation)#>]
+    
 }
 
 @end

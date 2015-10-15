@@ -103,20 +103,20 @@
                                 <exclude reference="RK9-6K-HiN"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="9iM-Um-KnR"/>
-                                <exclude reference="kL4-uI-GrW"/>
                                 <exclude reference="Amd-Af-i0R"/>
                                 <exclude reference="SfV-Ba-QpA"/>
                                 <exclude reference="lBF-2e-dvD"/>
                                 <exclude reference="p96-5e-fny"/>
+                                <exclude reference="9iM-Um-KnR"/>
+                                <exclude reference="kL4-uI-GrW"/>
+                                <exclude reference="bTe-CX-Njy"/>
                                 <exclude reference="MZg-NF-E2D"/>
                                 <exclude reference="jiz-20-smi"/>
+                                <exclude reference="HCN-dZ-ucZ"/>
+                                <exclude reference="nk6-LX-bRD"/>
                                 <exclude reference="5Sa-me-OLm"/>
                                 <exclude reference="W5g-de-l8T"/>
                                 <exclude reference="ph5-7D-hCF"/>
-                                <exclude reference="HCN-dZ-ucZ"/>
-                                <exclude reference="nk6-LX-bRD"/>
-                                <exclude reference="bTe-CX-Njy"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -129,20 +129,20 @@
                                 <include reference="RK9-6K-HiN"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="9iM-Um-KnR"/>
-                                <include reference="kL4-uI-GrW"/>
                                 <include reference="Amd-Af-i0R"/>
                                 <include reference="SfV-Ba-QpA"/>
                                 <include reference="lBF-2e-dvD"/>
                                 <include reference="p96-5e-fny"/>
+                                <include reference="9iM-Um-KnR"/>
+                                <include reference="kL4-uI-GrW"/>
+                                <include reference="bTe-CX-Njy"/>
                                 <include reference="MZg-NF-E2D"/>
                                 <include reference="jiz-20-smi"/>
+                                <include reference="HCN-dZ-ucZ"/>
+                                <include reference="nk6-LX-bRD"/>
                                 <include reference="5Sa-me-OLm"/>
                                 <include reference="W5g-de-l8T"/>
                                 <include reference="ph5-7D-hCF"/>
-                                <include reference="HCN-dZ-ucZ"/>
-                                <include reference="nk6-LX-bRD"/>
-                                <include reference="bTe-CX-Njy"/>
                             </mask>
                         </variation>
                     </view>

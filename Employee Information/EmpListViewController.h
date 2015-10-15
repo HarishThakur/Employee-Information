@@ -9,9 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "AddNewEmployeeViewController.h"
 
-@interface EmpListViewController : UIViewController <passEmployeeInfo> {
-    
-}
+@interface EmpListViewController : UIViewController <passEmployeeInfo> 
 @property (weak, nonatomic) IBOutlet UITableView *employeeListTableView;
 @property (weak, nonatomic) IBOutlet UITextField *textFieldFilterEmpName;
 @property (weak, nonatomic) IBOutlet UITextField *textFieldFilterEmpID;
