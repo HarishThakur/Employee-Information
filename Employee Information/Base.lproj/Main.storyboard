@@ -68,7 +68,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="153" y="68" width="95" height="30"/>
+                                    <rect key="frame" x="194" y="68" width="95" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="filterRecords:" destination="Tdh-uD-1ri" eventType="touchUpInside" id="NNq-XI-RDV"/>

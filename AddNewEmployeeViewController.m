@@ -95,7 +95,7 @@
             [self.passedInfo setValue:empPassedInfo[@"address"] forKey:@"address"];
         }
         
-//      [[self delegate]editEmployeeInfo: empPassedInfo];
+      [[self delegate]editEmployeeInfo: empPassedInfo];
         
         [self removeObserver:self forKeyPath:@"passedInfo.name" context:nil];
         [self removeObserver:self forKeyPath:@"passedInfo.empId" context:nil];
