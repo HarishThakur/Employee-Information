@@ -75,6 +75,15 @@
                                     <action selector="removeFilterRecords:" destination="Tdh-uD-1ri" eventType="touchUpInside" id="q3I-Ch-vQ4"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DZD-Jn-hpQ">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="124" width="368" height="39"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -101,6 +110,7 @@
                                 <exclude reference="oKz-JP-aPc"/>
                                 <exclude reference="lOT-aI-yDb"/>
                                 <exclude reference="RK9-6K-HiN"/>
+                                <exclude reference="DZD-Jn-hpQ"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="Amd-Af-i0R"/>
@@ -127,6 +137,7 @@
                                 <include reference="oKz-JP-aPc"/>
                                 <include reference="lOT-aI-yDb"/>
                                 <include reference="RK9-6K-HiN"/>
+                                <include reference="DZD-Jn-hpQ"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="Amd-Af-i0R"/>
@@ -155,8 +166,12 @@
                     </navigationItem>
                     <connections>
                         <outlet property="employeeListTableView" destination="lOT-aI-yDb" id="AIN-vy-H3X"/>
+                        <outlet property="filterButton" destination="oKz-JP-aPc" id="RXJ-2C-eUM"/>
+                        <outlet property="labelFilterRecords" destination="BPw-yE-gqr" id="0T1-Au-ACj"/>
+                        <outlet property="removeFilterButton" destination="RK9-6K-HiN" id="8uM-nx-et3"/>
                         <outlet property="textFieldFilterEmpID" destination="stP-Wi-yt8" id="EF3-bX-0wn"/>
                         <outlet property="textFieldFilterEmpName" destination="AFH-wo-kde" id="qZb-tX-8zb"/>
+                        <outlet property="textFieldNotify" destination="DZD-Jn-hpQ" id="lt7-fb-WCv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="15E-to-8Pw" userLabel="First Responder" sceneMemberID="firstResponder"/>

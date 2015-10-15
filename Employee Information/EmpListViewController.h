@@ -13,8 +13,11 @@
 @property (weak, nonatomic) IBOutlet UITableView *employeeListTableView;
 @property (weak, nonatomic) IBOutlet UITextField *textFieldFilterEmpName;
 @property (weak, nonatomic) IBOutlet UITextField *textFieldFilterEmpID;
+@property (weak, nonatomic) IBOutlet UILabel *textFieldNotify;
+@property (weak, nonatomic) IBOutlet UILabel *labelFilterRecords;
 
 @property (strong,nonatomic) NSMutableDictionary *empDetailedInfo;
-
+@property (weak, nonatomic) IBOutlet UIButton *filterButton;
+@property (weak, nonatomic) IBOutlet UIButton *removeFilterButton;
 
 @end

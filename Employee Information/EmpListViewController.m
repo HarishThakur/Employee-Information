@@ -31,6 +31,7 @@
     thumbnails = [[NSMutableArray alloc]init];
     //empDetailsInArray = [[NSMutableArray alloc]init];
 
+    
     self.employeeListTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     
      //[self.employeeListTableView reloadData];
@@ -93,16 +94,35 @@
 }
 
 -(void)viewWillAppear:(BOOL)animated {
+    if([tableData count] == nil) {
+        [_textFieldFilterEmpName setHidden:YES];
+        [_textFieldFilterEmpID setHidden:YES];
+        [self.filterButton setHidden:YES];
+        [self.removeFilterButton setHidden:YES];
+        [_labelFilterRecords setHidden:YES];
+        _textFieldNotify.text = @"Tap [+] on the top to add new employee";
+        
+    }else {
+        [_textFieldFilterEmpName setHidden:NO];
+        [_textFieldFilterEmpID setHidden:NO];
+        [self.filterButton setHidden:NO];
+        [self.removeFilterButton setHidden:NO];
+        [_textFieldNotify setHidden:YES];
+        [_labelFilterRecords setHidden:NO];
+    }
+
    [self.employeeListTableView reloadData];
 }
 
 - (IBAction)filterRecords:(id)sender {
-    NSArray *filtered = [empDetailsInArray filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"(name == %@) AND (empId==%@)", _textFieldFilterEmpName.text,_textFieldFilterEmpID.text]];
-    NSLog(@"Filter: \n%@", filtered);
-    [tableData removeAllObjects];
-    NSArray *filteredNames = [filtered valueForKey:@"name"];
-    [tableData addObjectsFromArray: filteredNames];
-    [self.employeeListTableView reloadData];
+    if(!([_textFieldFilterEmpName.text isEqualToString:@""] || [_textFieldFilterEmpID.text isEqualToString:@""])) {
+        NSArray *filtered = [empDetailsInArray filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"(name == %@) AND (empId==%@)", _textFieldFilterEmpName.text,_textFieldFilterEmpID.text]];
+        NSLog(@"Filter: \n%@", filtered);
+        [tableData removeAllObjects];
+        NSArray *filteredNames = [filtered valueForKey:@"name"];
+        [tableData addObjectsFromArray: filteredNames];
+        [self.employeeListTableView reloadData];
+    }
 }
 
 - (IBAction)removeFilterRecords:(id)sender {
