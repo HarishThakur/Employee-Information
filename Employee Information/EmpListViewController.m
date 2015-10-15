@@ -123,23 +123,23 @@
     [empDetailsInArray addObject:_empDetailedInfo];
 }
 
--(void)editEmployeeInfo: (NSMutableDictionary*)employeeInfo {
-    [tableData removeObjectAtIndex:currentRow.integerValue];
-    [empDetailsInArray removeObjectAtIndex:currentRow.integerValue];
-    [_empDetailedInfo removeObjectForKey:[NSNumber numberWithInt:currentRow.integerValue]];
-
-    [self setEmployeeInfo: employeeInfo];
-    
-//    NSMutableDictionary *detailDict = [empDetailsInArray objectAtIndex:currentRow.integerValue];
+//-(void)editEmployeeInfo: (NSMutableDictionary*)employeeInfo {
+//    [tableData removeObjectAtIndex:currentRow.integerValue];
+//    [empDetailsInArray removeObjectAtIndex:currentRow.integerValue];
+//    [_empDetailedInfo removeObjectForKey:[NSNumber numberWithInt:currentRow.integerValue]];
+//
+//    [self setEmployeeInfo: employeeInfo];
 //    
-//    [detailDict setObject:[employeeInfo objectForKey:@"name"] forKey:@"name"];
-//    [detailDict setObject:[employeeInfo objectForKey:@"empId"] forKey:@"empId"];
-//    [detailDict setObject:[employeeInfo objectForKey:@"designation"] forKey:@"designation"];
-//    [detailDict setObject:[employeeInfo objectForKey:@"address"] forKey:@"address"];
-    
-    
-    //[self.employeeListTableView reloadRowsAtIndexPaths:<#(NSArray *)#> withRowAnimation:<#(UITableViewRowAnimation)#>]
-    
-}
+////    NSMutableDictionary *detailDict = [empDetailsInArray objectAtIndex:currentRow.integerValue];
+////    
+////    [detailDict setObject:[employeeInfo objectForKey:@"name"] forKey:@"name"];
+////    [detailDict setObject:[employeeInfo objectForKey:@"empId"] forKey:@"empId"];
+////    [detailDict setObject:[employeeInfo objectForKey:@"designation"] forKey:@"designation"];
+////    [detailDict setObject:[employeeInfo objectForKey:@"address"] forKey:@"address"];
+//    
+//    
+//    //[self.employeeListTableView reloadRowsAtIndexPaths:<#(NSArray *)#> withRowAnimation:<#(UITableViewRowAnimation)#>]
+//    
+//}
 
 @end
