@@ -40,6 +40,11 @@
 
 - (IBAction)cancel:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
+    
+    [self removeObserver:self forKeyPath:@"passedInfo.name" context:nil];
+    [self removeObserver:self forKeyPath:@"passedInfo.empId" context:nil];
+    [self removeObserver:self forKeyPath:@"passedInfo.designation" context:nil];
+    [self removeObserver:self forKeyPath:@"passedInfo.address" context:nil];
 }
 
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
